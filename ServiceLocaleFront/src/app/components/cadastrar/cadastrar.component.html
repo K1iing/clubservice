@@ -1,0 +1,64 @@
+<div>
+  <section>
+    
+    <div class="background">
+        <div class="aneis2"></div>
+      <form [formGroup]="form"  (ngSubmit)="testarCadastro()"action="" class="formcontainer">
+        <div class="box">
+          <div class="sair">
+            <a href="/">Home</a>
+          </div>
+          <h1 class="registrarh1">Crie sua conta!</h1>
+          @if(cadastroError) {
+            <p class="paragrafo2">Ocorreu um erro com os campos.</p>
+          }  
+          @if(cadastroSucesso) {
+            <p class="paragrafo3">Cadastro realizado com sucesso!</p>
+          }
+          
+          <p class="paragrafo1">
+            Junte-se a uma comunidade de milhares de pessoas que já estão
+            aproveitando nossos serviços.
+          </p>
+          <div>
+            <input type="text" [formControlName]="'nome'" class="nome" placeholder="Digite seu nome" />
+          </div>
+          <div>
+            <input [formControlName]="'email'" type="email" class="email" placeholder="Digite seu email" />
+          </div>
+          <div>
+            <input
+            [formControlName]="'telefone'"
+              type="text"
+              class="telefone"
+              placeholder="Digite seu telefone"
+            />
+          </div>
+          <div>
+            <input
+            [formControlName]="'senha'"
+              type="password"
+              class="senha"
+              placeholder="Digite sua senha"
+            />
+          </div>
+          <div>
+            <input
+            [formControlName]="'confirmacaosenha'"
+              type="password"
+              class="confirmacaosenha"
+              placeholder="Confirme sua senha"
+            />
+          </div>
+          <div class="termoscontainer">
+            <input [formControl]="$any(form).controls['termos']" class="caixatermos" type="checkbox" name="" id="" />
+            <p class="paragrafotermos">Aceito os termos de politicas de uso</p>
+          </div>
+          <div>
+            <button type="submit" class="cadastrar">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

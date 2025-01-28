@@ -1,0 +1,255 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Garante que o body tenha altura total */
+  overflow: hidden; /* Remove rolagem */
+}
+
+.background {
+  background-image: url("./assets/Bg.png"); /* Imagem de fundo */
+  width: 100%;
+  min-height: 100vh; /* Cobrir a altura total da tela */
+  background-attachment: fixed;
+  background-size: cover; /* Cobre toda a área */
+  background-position: center; /* Centraliza a imagem */
+  display: flex; /* Flexbox para centralizar */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  overflow: hidden;
+}
+
+.sair {
+  margin: 0;
+  z-index: 10001;
+  transform: scale(1.1);
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.sair a {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background-color: #0575e6;
+  padding: 5px 20px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.sair a:hover {
+  background-color: black; /* Muda a cor de fundo para preto */
+  color: white;
+}
+
+.paragrafo2 {
+  color: red;
+  margin: 0;
+}
+
+.paragrafo3 {
+  margin: 0;
+  color: green;
+}
+
+.box {
+  width: 600px;
+  height: 650px; /* Define uma largura fixa */
+  padding: 20px; /* Define o espaçamento interno */
+  background-color: white; /* Fundo branco */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+  text-align: center; /* Centraliza texto dentro da caixa */
+  font-family: "Poppins", sans-serif; /* Fonte padrão */
+  display: flex; /* Usar flexbox interno para alinhar os filhos */
+  flex-direction: column; /* Empilha os filhos verticalmente */
+  gap: 15px; /* Espaço entre os elementos */
+}
+
+.registrarh1 {
+  font-size: 30px; /* Tamanho do texto */
+  font-weight: bold; /* Destaca o título */
+  color: #333; /* Cor do texto */
+  margin: 0; /* Remove margem extra */
+}
+
+.paragrafo1 {
+  font-size: 16px; /* Tamanho do texto */
+  color: #555; /* Cor do texto */
+  margin: 0; /* Remove margem extra */
+  line-height: 1.5; /* Melhora o espaçamento entre linhas */
+}
+.cadastrar {
+  text-decoration: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #0575e6;
+  padding: 15px 150px;
+  border-radius: 15px;
+  color: white;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.cadastrar:hover {
+  background-color: black; /* Muda a cor de fundo para preto */
+  color: white; /* Mantém o texto branco */
+  transform: scale(1.1); /* Aumenta o botão ligeiramente */
+}
+
+.termoscontainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.caixatermos {
+  margin: 0;
+  margin-left: 120px;
+}
+
+.paragrafotermos {
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  margin: 0; /* Remove margens extras */
+  line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+}
+
+.nome::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.aneis2 {
+  background-image: url(./assets/estrela.png);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  transform: rotate(0deg) translateX(-20px);
+  z-index: 1;
+}
+.formcontainer {
+  z-index: 2;
+}
+.confirmacaosenha {
+  background-color: #8098f9;
+  border-color: #8098f9;
+  opacity: 60%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-image: url(./assets/senha.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 16px;
+}
+
+.confirmacaosenha::placeholder {
+  background-color: #8098f9;
+  color: #2d31a6;
+  border-color: #8098f9;
+}
+
+.senha {
+  background-color: #8098f9;
+  opacity: 60%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border-color: #8098f9;
+  background-image: url(./assets/senha.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 16px;
+}
+
+.senha::placeholder {
+  background-color: #8098f9;
+  color: #2d31a6;
+  border: none;
+  border-color: #8098f9;
+}
+
+.email {
+  background-color: #8098f9;
+  border-color: #8098f9;
+  opacity: 60%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-image: url(./assets/email.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 16px;
+}
+
+.email::placeholder {
+  background-color: #8098f9;
+  color: #2d31a6;
+  border-color: #8098f9;
+}
+
+.nome {
+  background-color: #8098f9;
+  border-color: #8098f9;
+  opacity: 60%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-image: url(./assets/person.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
+}
+
+.nome::placeholder {
+  background-color: #8098f9;
+  color: #2d31a6;
+  border: none;
+  text-align: left;
+}
+
+.telefone {
+  background-color: #8098f9;
+  border-color: #8098f9;
+  opacity: 60%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-image: url(./assets/telefone.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 16px;
+}
+
+.telefone::placeholder {
+  background-color: #8098f9;
+  color: #2d31a6;
+  border: none;
+  text-align: left;
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 350px;
+    height: 700px;
+  }
+  .cadastrar {
+    padding: 15px 110px;
+  }
+  .caixatermos {
+    margin: 0;
+    margin-left: 0px;
+  }
+  .paragrafotermos {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .box {
+    width: 350px;
+    height: 650px;
+  }
+  .cadastrar {
+    padding: 15px 110px;
+  }
+  .caixatermos {
+    margin: 0;
+    margin-left: 0px;
+  }
+  .paragrafotermos {
+    font-size: 15px;
+  }
+}

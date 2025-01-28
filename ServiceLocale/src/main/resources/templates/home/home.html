@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{template.html}">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Serviços Gerais</title>
+</head>
+<body>
+<div layout:fragment="conteudo">
+    <header>
+        <div class="container">
+            <h1>Club Service</h1>
+            <p>Oferecemos soluções completas para atender às suas necessidades!</p>
+            <!-- Menu de navegação com link para logout -->
+            <nav>
+                <ul>
+                    <li><a href="/home">Início</a></li>
+                    <li><a href="atendimentoshome">Atendimentos</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                    <li>
+                        <form th:action="@{/logout}" method="post">
+                            <button type="submit">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-item">
+                <h3>Consultoria</h3>
+                <p>Oferecemos consultoria especializada para ajudar você a alcançar seus objetivos com eficiência.</p>
+            </div>
+            <div class="service-item">
+                <h3>Suporte Técnico</h3>
+                <p>Nosso time está disponível para fornecer suporte técnico rápido e de qualidade.</p>
+            </div>
+            <div class="service-item">
+                <h3>Desenvolvimento Web</h3>
+                <p>Criamos soluções digitais personalizadas para empresas de diversos setores.</p>
+            </div>
+            <div class="service-item">
+                <h3>Gestão de Projetos</h3>
+                <p>Gerenciamos seu projeto do início ao fim, garantindo que tudo seja entregue no prazo e dentro do orçamento.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>

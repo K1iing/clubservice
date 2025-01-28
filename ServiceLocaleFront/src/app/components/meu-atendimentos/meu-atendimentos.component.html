@@ -1,0 +1,41 @@
+<div class="background">
+
+<div class="container">
+    <div class="titulo-container">
+        <a href="/home" class="home">Voltar para Atendimentos</a>
+    </div>
+    <div>
+        <h1 class="titulo">TABELA DE AGENDAMENTOS!</h1>
+    </div>
+    
+    <table class="tabela">
+<thead>
+    <tr class="caixa">
+        <th>Profissional</th>
+        <th>Especialidade</th>
+        <th>Data do Atendimento</th>
+        <th>Status</th>
+        <th>Descrição</th>
+        <th>Controle</th>
+        
+    </tr>
+</thead>
+<tbody>
+    @for  (item of atendimentos; track $index ) {
+        
+        <tr >
+            <td>{{item.profissional.nome}}</td>
+            <td>{{item.profissional.especialidade}}</td>
+            <td>{{item.dataAtendimento}}</td>
+            <td>{{item.status_atendimentos}}</td>
+            <td class="descricao">{{item.descricao}}</td>
+            <button (click)="cancelar(item.id)" class="cancelar">Cancelar Atendimento</button>
+            
+        </tr>
+        
+    }
+</tbody>  
+    </table>
+</div>
+
+</div>

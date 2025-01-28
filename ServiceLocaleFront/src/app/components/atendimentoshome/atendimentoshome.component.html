@@ -1,0 +1,44 @@
+<header class="cabecalho">
+  <div>
+    <h1 class="cabecalhoh1">ClubService</h1>
+  </div>
+  <div>
+    <p class="usuarioheader">Ola, {{nome}}</p>
+  </div>
+  <div>
+    <button class="deslogar" (click)="deslogar()">Deslogar</button>
+  </div>
+</header>
+<body>
+  <div class="container">
+    <div class="bloco"></div>
+    <div class="texto-container">
+      <div class="pedreiro"></div>
+      <div class="medico"></div>
+      <div class="pintor"></div>
+      
+    <div>
+      <h1 class="titulo">
+        Seja Bem-Vindo <br />
+        Ao ClubService
+      </h1>
+    </div>
+    
+    <div>
+      <p class="paragrafo1">
+        O ClubService é especializada na prestação de <br />
+        gerais, oferecendo soluções completas para atender às <br />
+        necessidades de nossos clientes com qualidade, eficiência e <br />
+        compromisso.
+      </p>
+    </div>
+      <div>
+        <a (click)="enviarMeusAtendimentos()" class="butaoatendimentos">Ver meus atendimentos</a>
+      </div>
+      <div>
+        <a (click)="agendarAtendimentos()" class="butaoagendar">Agendar atendimentos</a>
+      </div>
+    </div>
+    
+  </div>
+</body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Atendimento</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<h1>Agendar Atendimento</h1>
+
+<form id="atendimentoForm">
+    <label for="idProfissional">ID do Profissional:</label>
+    <select id="idProfissional" name="idProfissional" required>
+        <option value="">Selecione um profissional</option>
+    </select>
+
+    <label for="dataAgendada">Data Agendada:</label>
+    <input type="datetime-local" id="dataAgendada" name="dataAgendada" required>
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao" required></textarea>
+
+    <button type="submit">Agendar</button>
+</form>
+
+<div id="message"></div>
+
+<script src="/js/atendimento.js"></script>
+</body>
+</html>
