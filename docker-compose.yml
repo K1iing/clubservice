@@ -1,0 +1,48 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: clubservice
+    ports:
+      - "3307:3306"  # Porta mapeada corretamente
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - backend
+
+  springboot:
+    build:
+      context: ./ServiceLocale  # Caminho correto para o código do Spring Boot
+    container_name: springboot-container
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/clubservice?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - "8080:8080"  # Porta mapeada corretamente
+    depends_on:
+      - db
+    networks:
+      - backend
+
+  angular:
+    build:
+      context: ./ServiceLocaleFront  # Caminho correto para o código do Angular
+    container_name: angular-container
+    ports:
+      - "80:80"  # Porta mapeada corretamente
+    depends_on:
+      - springboot
+    networks:
+      - frontend
+
+volumes:
+  db-data:
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
