@@ -43,7 +43,7 @@
 <h2>🛠️ Como Rodar o Projeto</h2>
 <ol>
     <li>Clone o repositório:</li>
-    <pre>git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/K1iing/clubservice.git)
+    <pre>git clone https://github.com/K1iing/clubservice.git
 cd seu-repositorio</pre>
     <li>Suba os containers com Docker Compose:</li>
     <pre>docker-compose up --build</pre>
