@@ -18,7 +18,7 @@
 <ul>
     <li><strong>Frontend:</strong> Angular 19, TypeScript</li>
     <li><strong>Backend:</strong> Spring Boot, Java, Spring Security, JPA</li>
-    <li><strong>Banco de Dados:</strong> MySQL</li>
+    <li><strong>Banco de Dados:</strong> MySQL, Flyway</li>
     <li><strong>Containerização:</strong> Docker</li>
     <li><strong>Autenticação:</strong> JWT (JSON Web Token)</li>
     <li><strong>ORM:</strong> Hibernate</li>
