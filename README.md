@@ -1,63 +1,46 @@
 📌 ClubService
-
-O ClubService é uma plataforma online para serviços gerais, onde usuários podem se cadastrar como profissionais para oferecer atendimentos e serviços, ou contratar profissionais para realizar serviços.
-A aplicação permite que os profissionais agendem atendimentos, com funcionalidades completas de cadastro, recuperação de senha, autenticação, autorização e envio de e-mails automáticos.
+O ClubService é uma plataforma online para serviços gerais, onde usuários podem se cadastrar como profissionais para oferecer atendimentos e serviços, ou contratar profissionais para realizar serviços. A aplicação permite que os profissionais agendem atendimentos, com funcionalidades completas de cadastro, recuperação de senha, autenticação, autorização e envio de e-mails automáticos.
 
 🚀 Tecnologias Utilizadas
-
-Frontend: Angular, TypeScript
-
+Frontend: Angular 19, TypeScript
 Backend: Spring Boot, Java, Spring Security, JPA
-
 Banco de Dados: MySQL
-
 Containerização: Docker
-
 Autenticação: JWT (JSON Web Token)
-
 ORM: Hibernate
 
 📦 Estrutura do Projeto
 
 📂 projeto
- ├── 📂 ServiceLocale  # Código do backend em Spring Boot
- ├── 📂 ServiceLocaleFront # Código do frontend em Angular
- ├── 📜 docker-compose.yml  # Arquivo para rodar tudo com Docker
- ├── 📜 README.md  # Este arquivo
-
+ ├── 📂 ServiceLocale          # Código do backend em Spring Boot
+ ├── 📂 ServiceLocaleFront      # Código do frontend em Angular
+ ├── 📜 docker-compose.yml     # Arquivo para rodar tudo com Docker
+ ├── 📜 README.md              # Este arquivo
 🔧 Pré-requisitos
-
 Antes de começar, você precisará ter instalado na sua máquina:
 
 Docker
-
 Docker Compose
-
 🛠️ Como Rodar o Projeto
-
 Clone o repositório:
+
 
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
-
 Suba os containers com Docker Compose:
 
-docker-compose up --build
 
+docker-compose up --build
 Acesse a aplicação:
 
 Frontend: http://localhost:4200
-
 Backend: http://localhost:8080
-
 Swagger: http://localhost:8080/swagger-ui/index.html#/
-
-Banco de Dados: Conecte-se ao MySQL na porta 3306 usando user:root e password:root
+Banco de Dados: Conecte-se ao MySQL na porta 3306 usando user: root e password: root.
 
 📜 API Endpoints
 
 Autenticação e Cadastro
-
 POST /auth/logar: Logar um usuário e retornar um token JWT.
 POST /auth/cadastrar: Cadastrar um novo usuário no sistema.
 PUT /auth/atualizar: Atualizar informações de um usuário autenticado (requer relogin após atualização).
@@ -100,6 +83,3 @@ POST /email/postConfirmationAtendimento: Enviar e-mail de confirmação de agend
 
 Contribuição
 Sinta-se à vontade para contribuir para o projeto criando issues ou pull requests. Para sugestões, melhorias ou dúvidas, entre em contato!
-
-Essa estrutura de README cobre as principais informações sobre o seu projeto e ajuda os outros a entenderem rapidamente como rodá-lo e como ele funciona.
-
