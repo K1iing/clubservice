@@ -1,85 +1,126 @@
-<h1📌 ClubService </h1>
-O ClubService é uma plataforma online para serviços gerais, onde usuários podem se cadastrar como profissionais para oferecer atendimentos e serviços, ou contratar profissionais para realizar serviços. A aplicação permite que os profissionais agendem atendimentos, com funcionalidades completas de cadastro, recuperação de senha, autenticação, autorização e envio de e-mails automáticos.
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-🚀 Tecnologias Utilizadas
-Frontend: Angular 19, TypeScript
-Backend: Spring Boot, Java, Spring Security, JPA
-Banco de Dados: MySQL
-Containerização: Docker
-Autenticação: JWT (JSON Web Token)
-ORM: Hibernate
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubService</title>
+</head>
 
-📦 Estrutura do Projeto
+<body>
 
-📂 projeto
- ├── 📂 ServiceLocale          # Código do backend em Spring Boot
- ├── 📂 ServiceLocaleFront      # Código do frontend em Angular
- ├── 📜 docker-compose.yml     # Arquivo para rodar tudo com Docker
- ├── 📜 README.md              # Este arquivo
-🔧 Pré-requisitos
-Antes de começar, você precisará ter instalado na sua máquina:
+    <!-- Título e Imagem de Capa -->
+    <header>
+        <h1>📌 ClubService</h1>
+        <img src="https://via.placeholder.com/1200x400.png?text=ClubService" alt="Imagem de Capa do ClubService">
+    </header>
 
-Docker
-Docker Compose
-🛠️ Como Rodar o Projeto
-Clone o repositório:
+    <!-- Badges -->
+    <section id="badges">
+        <img src="https://img.shields.io/badge/Frontend-Angular-FF0000" alt="Angular Badge">
+        <img src="https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F" alt="Spring Boot Badge">
+        <img src="https://img.shields.io/badge/Database-MySQL-4479A1" alt="MySQL Badge">
+        <img src="https://img.shields.io/badge/License-MIT-00BFFF" alt="MIT License Badge">
+    </section>
 
+    <!-- Índice -->
+    <section id="indice">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#descricao">Descrição do Projeto</a></li>
+            <li><a href="#status">Status do Projeto</a></li>
+            <li><a href="#funcionalidades">Funcionalidades e Demonstração</a></li>
+            <li><a href="#acesso">Acesso ao Projeto</a></li>
+            <li><a href="#tecnologias">Tecnologias Utilizadas</a></li>
+            <li><a href="#contribuidores">Pessoas Contribuidoras</a></li>
+            <li><a href="#desenvolvedores">Pessoas Desenvolvedoras do Projeto</a></li>
+            <li><a href="#licenca">Licença</a></li>
+        </ul>
+    </section>
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-Suba os containers com Docker Compose:
+    <!-- Descrição do Projeto -->
+    <section id="descricao">
+        <h2>Descrição do Projeto</h2>
+        <p>O <strong>ClubService</strong> é uma plataforma online para serviços gerais, onde usuários podem se cadastrar como
+            profissionais para oferecer atendimentos e serviços, ou contratar profissionais para realizar serviços.
+            A aplicação permite que os profissionais agendem atendimentos, com funcionalidades completas de cadastro,
+            recuperação de senha, autenticação, autorização e envio de e-mails automáticos.</p>
+    </section>
 
+    <!-- Status do Projeto -->
+    <section id="status">
+        <h2>Status do Projeto</h2>
+        <p>Este projeto está atualmente em <strong>desenvolvimento</strong>. Algumas funcionalidades já estão implementadas e
+            funcionando.</p>
+    </section>
 
-docker-compose up --build
-Acesse a aplicação:
+    <!-- Funcionalidades e Demonstração da Aplicação -->
+    <section id="funcionalidades">
+        <h2>Funcionalidades e Demonstração da Aplicação</h2>
+        <p>A aplicação possui as seguintes funcionalidades:</p>
+        <ul>
+            <li>Cadastro de usuários e profissionais</li>
+            <li>Login e autenticação via JWT</li>
+            <li>Agendamento de atendimentos</li>
+            <li>Envio de e-mails automáticos de confirmação e recuperação de senha</li>
+        </ul>
+        <h3>Demonstração</h3>
+        <p>Acesse a aplicação no <a href="http://localhost:4200">link do Frontend</a> ou explore o Swagger no
+            <a href="http://localhost:8080/swagger-ui/index.html#/">link do Swagger</a> para testar a API.</p>
+    </section>
 
-Frontend: http://localhost:4200
-Backend: http://localhost:8080
-Swagger: http://localhost:8080/swagger-ui/index.html#/
-Banco de Dados: Conecte-se ao MySQL na porta 3306 usando user: root e password: root.
+    <!-- Acesso ao Projeto -->
+    <section id="acesso">
+        <h2>Acesso ao Projeto</h2>
+        <p>Para rodar o projeto localmente, siga os passos abaixo:</p>
+        <ul>
+            <li>Clone o repositório: <code>git clone https://github.com/seu-usuario/seu-repositorio.git</code></li>
+            <li>Suba os containers com Docker Compose: <code>docker-compose up --build</code></li>
+            <li>Acesse o Frontend: <a href="http://localhost:4200">http://localhost:4200</a></li>
+            <li>Acesse o Backend: <a href="http://localhost:8080">http://localhost:8080</a></li>
+        </ul>
+    </section>
 
-📜 API Endpoints
+    <!-- Tecnologias Utilizadas -->
+    <section id="tecnologias">
+        <h2>Tecnologias Utilizadas</h2>
+        <ul>
+            <li><strong>Frontend:</strong> Angular 19, TypeScript</li>
+            <li><strong>Backend:</strong> Spring Boot, Java, Spring Security, JPA</li>
+            <li><strong>Banco de Dados:</strong> MySQL</li>
+            <li><strong>Containerização:</strong> Docker</li>
+            <li><strong>Autenticação:</strong> JWT (JSON Web Token)</li>
+            <li><strong>ORM:</strong> Hibernate</li>
+        </ul>
+    </section>
 
-Autenticação e Cadastro
-POST /auth/logar: Logar um usuário e retornar um token JWT.
-POST /auth/cadastrar: Cadastrar um novo usuário no sistema.
-PUT /auth/atualizar: Atualizar informações de um usuário autenticado (requer relogin após atualização).
-GET /auth: Listar todos os usuários cadastrados no sistema.
-DELETE /auth/{id}: Deletar um usuário pelo ID.
+    <!-- Pessoas Contribuidoras -->
+    <section id="contribuidores">
+        <h2>Pessoas Contribuidoras</h2>
+        <p>As pessoas que ajudaram a contribuir com este projeto são:</p>
+        <ul>
+            <li>João Silva</li>
+            <li>Maria Oliveira</li>
+            <li>Carlos Souza</li>
+        </ul>
+    </section>
 
-Atendimentos
+    <!-- Pessoas Desenvolvedoras do Projeto -->
+    <section id="desenvolvedores">
+        <h2>Pessoas Desenvolvedoras do Projeto</h2>
+        <p>Este projeto foi desenvolvido por:</p>
+        <ul>
+            <li>Fulano de Tal</li>
+            <li>Beltrano da Silva</li>
+        </ul>
+    </section>
 
-POST /atendimentos: Cadastrar um novo atendimento.
-PUT /atendimentos/atualizar/{id}: Atualizar informações de um atendimento específico.
-POST /atendimentos/alterar/{id}: Alterar o status de um atendimento (CANCELADO ou CONCLUÍDO).
-GET /atendimentos: Listar todos os atendimentos.
-GET /atendimentos/{id}: Consultar o histórico de atendimentos de um cliente pelo ID.
-GET /atendimentos/listar/{id}: Consultar detalhes de um atendimento pelo ID.
-GET /atendimentos/listagem/{email}: Listar os atendimentos de um profissional pelo e-mail.
-GET /atendimentos/email/{email}: Consultar o histórico de atendimentos de um cliente pelo e-mail.
-DELETE /atendimentos/{id}: Deletar um atendimento pelo ID.
+    <!-- Licença -->
+    <section id="licenca">
+        <h2>Licença</h2>
+        <p>Este projeto está licenciado sob a <strong>Licença MIT</strong>. Veja o arquivo <a href="LICENSE">LICENSE</a> para mais detalhes.</p>
+    </section>
 
-Profissionais
+</body>
 
-GET /profissional: Listar todos os profissionais.
-POST /profissional: Cadastrar um novo profissional.
-GET /profissional/{id}: Consultar o histórico de atendimentos de um profissional pelo ID.
-DELETE /profissional/{id}: Deletar um profissional pelo ID.
-GET /profissional/profissoes: Listar todas as profissões disponíveis.
-
-Clientes
-
-POST /cliente/cadastrar: Cadastrar um cliente no sistema.
-GET /cliente: Listar todos os clientes cadastrados no sistema.
-GET /cliente/{email}: Consultar o nome de um cliente pelo e-mail.
-DELETE /cliente/{id}: Deletar um cliente pelo ID.
-
-E-mail
-
-POST /email: Enviar token de recuperação de senha.
-POST /email/resetPassword: Alterar a senha de um usuário após a confirmação do token.
-POST /email/postToken: Receber um token para autenticação.
-POST /email/postConfirmationAtendimento: Enviar e-mail de confirmação de agendamento de atendimento.
-
-Contribuição
-Sinta-se à vontade para contribuir para o projeto criando issues ou pull requests. Para sugestões, melhorias ou dúvidas, entre em contato!
+</html>
