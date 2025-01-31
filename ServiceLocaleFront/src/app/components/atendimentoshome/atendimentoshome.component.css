@@ -117,6 +117,28 @@ body {
   
 }
 
+.butaoprofissional {
+  text-decoration: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: black;
+  background-color: #5665FF;
+  padding: 15px 70px;
+  position: absolute;
+  margin-top: 170px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.butaoprofissional:hover {
+
+  color: white;
+  background-color: black;
+}
+
 .butaoagendar {
   text-decoration: none;
   border: none;
@@ -194,6 +216,9 @@ body {
   .butaoatendimentos {
     font-size: 17px;
   }
+  .butaoprofissional {
+    font-size: 17px;
+  }
   .paragrafo1 {
     margin-left: 5px;
   }
@@ -231,6 +256,9 @@ body {
     font-size: 18px;
   }
   .butaoatendimentos {
+    font-size: 17px;
+  }
+  .butaoprofissional {
     font-size: 17px;
   }
   .paragrafo1 {

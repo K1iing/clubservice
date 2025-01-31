@@ -8,11 +8,23 @@ import { TokentrueComponent } from './components/tokentrue/tokentrue.component';
 import { NewpasswordComponent } from './components/newpassword/newpassword.component';
 import { MeuAtendimentosComponent } from './components/meu-atendimentos/meu-atendimentos.component';
 import { AgendaratendimentoComponent } from './components/agendaratendimento/agendaratendimento.component';
+import { ProfissionaisComponent } from './components/profissionais/profissionais.component';
+import { ProfissionalatendimentosComponent } from './components/profissionalatendimentos/profissionalatendimentos.component';
 
 export const routes: Routes = [
   {
     path: 'home',
     component: AtendimentoshomeComponent,
+    canActivate: [authGuard],
+  },
+  {
+    path: 'profissionais',
+    component: ProfissionaisComponent,
+    canActivate: [authGuard],
+  },
+  {
+    path: 'profissional/atendimento',
+    component: ProfissionalatendimentosComponent,
     canActivate: [authGuard],
   },
   {

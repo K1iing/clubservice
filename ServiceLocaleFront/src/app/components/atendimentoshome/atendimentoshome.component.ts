@@ -21,6 +21,9 @@ export class AtendimentoshomeComponent {
     this.router.navigate(['/agendar'])
   }
 
+  agendarProfissao() {
+    this.router.navigate(['/profissionais'])
+  }
 
   enviarMeusAtendimentos() {
     this.router.navigate(['/meusatendimentos']);
