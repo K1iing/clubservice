@@ -2,6 +2,8 @@
 
 <p>O ClubService é uma plataforma online para serviços gerais, onde usuários podem se cadastrar como profissionais para oferecer atendimentos e serviços, ou contratar profissionais para realizar serviços. A aplicação permite que os profissionais agendem atendimentos, com funcionalidades completas de cadastro, recuperação de senha, autenticação, autorização e envio de e-mails automáticos.</p>
 
+<h2>📷 Imagens do Projeto</h2>
+
 ![image](https://github.com/user-attachments/assets/45e796a0-094a-4fa7-880c-bc51b531a9b1)
 ![image](https://github.com/user-attachments/assets/0a13d158-a5af-4f20-bb3e-8973c61ff85b)
 ![image](https://github.com/user-attachments/assets/b8774cb5-581e-40db-9b7e-fd6fbaecb7e0)
@@ -105,6 +107,3 @@ cd seu-repositorio</pre>
 
 <h2>🤝 Contribuição</h2>
 <p>Sinta-se à vontade para contribuir para o projeto criando issues ou pull requests. Para sugestões, melhorias ou dúvidas, entre em contato!</p>
-
-<h2>📄 Licença</h2>
-<p>Este projeto está licenciado sob a licença MIT. Veja o arquivo <a href="LICENSE">LICENSE</a> para mais detalhes.</p>
