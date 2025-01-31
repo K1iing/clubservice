@@ -2,6 +2,16 @@
 
 <p>O ClubService é uma plataforma online para serviços gerais, onde usuários podem se cadastrar como profissionais para oferecer atendimentos e serviços, ou contratar profissionais para realizar serviços. A aplicação permite que os profissionais agendem atendimentos, com funcionalidades completas de cadastro, recuperação de senha, autenticação, autorização e envio de e-mails automáticos.</p>
 
+![image](https://github.com/user-attachments/assets/45e796a0-094a-4fa7-880c-bc51b531a9b1)
+![image](https://github.com/user-attachments/assets/0a13d158-a5af-4f20-bb3e-8973c61ff85b)
+![image](https://github.com/user-attachments/assets/b8774cb5-581e-40db-9b7e-fd6fbaecb7e0)
+![image](https://github.com/user-attachments/assets/ac2a2e61-1e5d-4dd1-8c1a-60c5bfad34e1)
+![image](https://github.com/user-attachments/assets/253796e6-0e8f-4a58-be42-4eaf89bc7ec6)
+![image](https://github.com/user-attachments/assets/1d5a1a16-c58f-42e0-9a35-52e70c94100b)
+![image](https://github.com/user-attachments/assets/15adbce7-30ed-4317-96d0-6ce1af50259a)
+![image](https://github.com/user-attachments/assets/09720af0-f756-42a2-b6f8-e72ad7af9776)
+
+
 <h2>🚀 Tecnologias Utilizadas</h2>
 <ul>
     <li><strong>Frontend:</strong> Angular 19, TypeScript</li>
